@@ -12,9 +12,11 @@ $(document).ready(function() {
         cityName = data.list[0].name;
         description = data.list[0].weather[0].description;
         icon = data.list[0].weather[0].icon;
-
+				$icon = 'http://openweathermap.org/img/w/'+icon;
         $('.cityName').text(cityName);
-        $('.temp').html(temp + '&deg;');
+        $('.temp').html('<img src="'+$icon+'" style="position: relative; top: 5px;" />' + temp + '&deg;');
+					
+				console.log('[Icond]'+$icon);
         getWeatherIcon(icon);
 
 
