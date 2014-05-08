@@ -3,5 +3,5 @@ $(document).ready(function() {
     // http://api.jquery.com/category/ajax/shorthand-methods/
 
     $(".target").load("sample.html");
-
+		// finished
 });
